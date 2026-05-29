@@ -1,6 +1,6 @@
 # Sistemas de Funkos
 - Materia: Proyecto, Diseño e  Implementacion de Sistemas Computacionales
-- Curso:7°1
+- Curso: 7°1
 - Grupo de Taller: 7.1
 - Docente: Pablo Gareis
 
