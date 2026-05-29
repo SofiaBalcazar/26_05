@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Batman - El Caballero de la Noche protege Gotham City">
+  <title>Batman - The Dark Knight</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+ 
+    <header class="encabezado">
+        <img src=""alt="">
+        <nav class="menu">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+  <!-- ========================================
+       NAVBAR
+  ======================================== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar__logo">
+        <img src="../static/images/bat-logo.png" alt="Batman Logo">
+        <span>Batman</span>
+      </a>
+      
+      <ul class="navbar__menu">
+        <li><a href="#inicio" class="navbar__link">Inicio</a></li>
+        <li><a href="#historia" class="navbar__link">Historia</a></li>
+        <li><a href="#habilidades" class="navbar__link">Habilidades</a></li>
+        <li><a href="#galeria" class="navbar__link">Galeria</a></li>
+        <li><a href="#villanos" class="navbar__link">Villanos</a></li>
+      </ul>
+      
+      <div class="navbar__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================
+       HERO SECTION
+  ======================================== -->
+  <section id="inicio" class="hero">
+    <div class="hero__background">
+      <img src="../static/images/batman-hero.png" alt="Batman en Gotham">
+      <div class="hero__overlay"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero__content">
+        <img src="../static/images/bat-logo.png" alt="Bat Signal" class="hero__logo">
+        <h1 class="hero__title">Batman</h1>
+        <p class="hero__subtitle">El Caballero de la Noche</p>
+        
+        <div class="hero__buttons">
+          <a href="#historia" class="btn btn--primary">
+            Conocer Historia
+          </a>
+          <a href="#galeria" class="btn btn--outline">
+            Ver Galeria
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero__scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ========================================
+       ABOUT SECTION
+  ======================================== -->
+  <section id="historia" class="about">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__subtitle">Origen</p>
+        <h2 class="section__title">La Leyenda de Bruce Wayne</h2>
+      </div>
+      
+      <div class="about__grid">
+        <div class="about__image fade-in">
+          <img src="../static/images/gotham-city.png" alt="Gotham City">
+        </div>
+        
+        <div class="about__content fade-in">
+          <h3>De la Tragedia al Heroismo</h3>
+          <p>
+            Bruce Wayne presencio el asesinato de sus padres, Thomas y Martha Wayne, 
+            a manos de un criminal en un callejon de Gotham City. Esta tragedia marco 
+            el inicio de su transformacion en Batman, el Caballero de la Noche.
+          </p>
+          <p>
+            Tras anos de entrenamiento fisico y mental alrededor del mundo, Bruce 
+            regreso a Gotham con un objetivo: acabar con el crimen que destruyo su 
+            familia. Utilizando su vasta fortuna y tecnologia de Wayne Enterprises, 
+            creo la identidad de Batman.
+          </p>
+          
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number" data-value="85">0+</span>
+              <span class="stat__label">Anos de Historia</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-value="1000">0+</span>
+              <span class="stat__label">Comics Publicados</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-value="15">0+</span>
+              <span class="stat__label">Peliculas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       ABILITIES SECTION
+  ======================================== -->
+  <section id="habilidades" class="abilities">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__subtitle">Capacidades</p>
+        <h2 class="section__title">Habilidades del Murcielago</h2>
+      </div>
+      
+      <div class="abilities__grid">
+        <div class="ability fade-in" data-level="95">
+          <div class="ability__header">
+            <span class="ability__name">Artes Marciales</span>
+            <span class="ability__level">95%</span>
+          </div>
+          <div class="ability__bar">
+            <div class="ability__progress"></div>
+          </div>
+        </div>
+        
+        <div class="ability fade-in" data-level="98">
+          <div class="ability__header">
+            <span class="ability__name">Inteligencia</span>
+            <span class="ability__level">98%</span>
+          </div>
+          <div class="ability__bar">
+            <div class="ability__progress"></div>
+          </div>
+        </div>
+        
+        <div class="ability fade-in" data-level="92">
+          <div class="ability__header">
+            <span class="ability__name">Tecnologia</span>
+            <span class="ability__level">92%</span>
+          </div>
+          <div class="ability__bar">
+            <div class="ability__progress"></div>
+          </div>
+        </div>
+        
+        <div class="ability fade-in" data-level="88">
+          <div class="ability__header">
+            <span class="ability__name">Sigilo</span>
+            <span class="ability__level">88%</span>
+          </div>
+          <div class="ability__bar">
+            <div class="ability__progress"></div>
+          </div>
+        </div>
+        
+        <div class="ability fade-in" data-level="90">
+          <div class="ability__header">
+            <span class="ability__name">Intimidacion</span>
+            <span class="ability__level">90%</span>
+          </div>
+          <div class="ability__bar">
+            <div class="ability__progress"></div>
+          </div>
+        </div>
+        
+        <div class="ability fade-in" data-level="85">
+          <div class="ability__header">
+            <span class="ability__name">Resistencia</span>
+            <span class="ability__level">85%</span>
+          </div>
+          <div class="ability__bar">
+            <div class="ability__progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       GALLERY SECTION
+  ======================================== -->
+  <section id="galeria" class="gallery">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__subtitle">Multimedia</p>
+        <h2 class="section__title">Galeria de Gotham</h2>
+      </div>
+      
+      <div class="gallery__grid">
+        <div class="gallery__item fade-in">
+          <img src="../static/images/batman-hero.png" alt="Batman">
+          <div class="gallery__overlay">
+            <h4>El Caballero Oscuro</h4>
+            <p>Vigilante de Gotham</p>
+          </div>
+        </div>
+        
+        <div class="gallery__item fade-in">
+          <img src="../static/images/gotham-city.png" alt="Gotham City">
+          <div class="gallery__overlay">
+            <h4>Gotham City</h4>
+            <p>La ciudad que nunca duerme</p>
+          </div>
+        </div>
+        
+        <div class="gallery__item fade-in">
+          <img src="../static/images/batmobile.png" alt="Batmobile">
+          <div class="gallery__overlay">
+            <h4>Batimovil</h4>
+            <p>Vehiculo de combate</p>
+          </div>
+        </div>
+        
+        <div class="gallery__item fade-in">
+          <img src="../static/images/bat-logo.png" alt="Bat Signal">
+          <div class="gallery__overlay">
+            <h4>Bat-Senal</h4>
+            <p>Simbolo de esperanza</p>
+          </div>
+        </div>
+        
+        <div class="gallery__item fade-in">
+          <img src="../static/images/batman-hero.png" alt="Batman en accion">
+          <div class="gallery__overlay">
+            <h4>En Accion</h4>
+            <p>Protegiendo la ciudad</p>
+          </div>
+        </div>
+        
+        <div class="gallery__item fade-in">
+          <img src="../static/images/gotham-city.png" alt="Noche en Gotham">
+          <div class="gallery__overlay">
+            <h4>Noche Eterna</h4>
+            <p>El reino del murcielago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       VILLAINS SECTION
+  ======================================== -->
+  <section id="villanos" class="villains">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__subtitle">Enemigos</p>
+        <h2 class="section__title">Galeria de Villanos</h2>
+      </div>
+      
+      <div class="villains__grid">
+        <div class="villain fade-in">
+          <div class="villain__image">&#129313;</div>
+          <div class="villain__info">
+            <h4 class="villain__name">Joker</h4>
+            <p class="villain__alias">El Principe Payaso del Crimen</p>
+            <div class="villain__danger">
+              <span class="villain__danger-label">Peligro:</span>
+              <div class="villain__danger-bar">
+                <div class="villain__danger-level" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="villain fade-in">
+          <div class="villain__image">&#128568;</div>
+          <div class="villain__info">
+            <h4 class="villain__name">Two-Face</h4>
+            <p class="villain__alias">Harvey Dent</p>
+            <div class="villain__danger">
+              <span class="villain__danger-label">Peligro:</span>
+              <div class="villain__danger-bar">
+                <div class="villain__danger-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="villain fade-in">
+          <div class="villain__image">&#129440;</div>
+          <div class="villain__info">
+            <h4 class="villain__name">Scarecrow</h4>
+            <p class="villain__alias">Dr. Jonathan Crane</p>
+            <div class="villain__danger">
+              <span class="villain__danger-label">Peligro:</span>
+              <div class="villain__danger-bar">
+                <div class="villain__danger-level" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="villain fade-in">
+          <div class="villain__image">&#10052;</div>
+          <div class="villain__info">
+            <h4 class="villain__name">Mr. Freeze</h4>
+            <p class="villain__alias">Dr. Victor Fries</p>
+            <div class="villain__danger">
+              <span class="villain__danger-label">Peligro:</span>
+              <div class="villain__danger-bar">
+                <div class="villain__danger-level" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="villain fade-in">
+          <div class="villain__image">&#127811;</div>
+          <div class="villain__info">
+            <h4 class="villain__name">Poison Ivy</h4>
+            <p class="villain__alias">Dr. Pamela Isley</p>
+            <div class="villain__danger">
+              <span class="villain__danger-label">Peligro:</span>
+              <div class="villain__danger-bar">
+                <div class="villain__danger-level" style="width: 78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="villain fade-in">
+          <div class="villain__image">&#128039;</div>
+          <div class="villain__info">
+            <h4 class="villain__name">Penguin</h4>
+            <p class="villain__alias">Oswald Cobblepot</p>
+            <div class="villain__danger">
+              <span class="villain__danger-label">Peligro:</span>
+              <div class="villain__danger-bar">
+                <div class="villain__danger-level" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="villain fade-in">
+          <div class="villain__image">&#128049;</div>
+          <div class="villain__info">
+            <h4 class="villain__name">Catwoman</h4>
+            <p class="villain__alias">Selina Kyle</p>
+            <div class="villain__danger">
+              <span class="villain__danger-label">Peligro:</span>
+              <div class="villain__danger-bar">
+                <div class="villain__danger-level" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="villain fade-in">
+          <div class="villain__image">&#129504;</div>
+          <div class="villain__info">
+            <h4 class="villain__name">Riddler</h4>
+            <p class="villain__alias">Edward Nygma</p>
+            <div class="villain__danger">
+              <span class="villain__danger-label">Peligro:</span>
+              <div class="villain__danger-bar">
+                <div class="villain__danger-level" style="width: 82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+  ======================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__quote">"Soy la venganza. Soy la noche. Soy Batman."</p>
+        <p class="footer__author">- Bruce Wayne</p>
+        <img src="../static/images/bat-logo.png" alt="Batman Logo" class="footer__logo">
+        <p class="footer__copy">&copy; 2026 Batman - El Caballero de la Noche. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================
+       MODAL
+  ======================================== -->
+  <div id="galleryModal" class="modal">
+    <div class="modal__backdrop"></div>
+    <div class="modal__content">
+      <button class="modal__close">&times;</button>
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../static/scripts/src/main.js"></script>
+</body>
+</html>
