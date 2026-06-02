@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+{% load static %}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
  
@@ -31,7 +31,7 @@
   <nav class="navbar">
     <div class="container">
       <a href="#" class="navbar__logo">
-        <img src="../static/images/bat-logo.png" alt="Batman Logo">
+        <img src="{% static 'src/logo.png' %}" alt="Batman Logo">
         <span>Batman</span>
       </a>
       
@@ -54,21 +54,25 @@
   <!-- ========================================
        HERO SECTION
   ======================================== -->
+  {% block Altamirano %}
   <section id="inicio" class="hero">
     <div class="hero__background">
-      <img src="../static/images/batman-hero.png" alt="Batman en Gotham">
+      <img src="{% static 'src/1.jpg' %}" alt="Batman en Gotham">
       <div class="hero__overlay"></div>
     </div>
     
     <div class="container">
       <div class="hero__content">
-        <img src="../static/images/bat-logo.png" alt="Bat Signal" class="hero__logo">
+        <img src="{% static 'src/logo.png' %}" alt="Bat Signal" class="hero__logo">
         <h1 class="hero__title">Batman</h1>
         <p class="hero__subtitle">El Caballero de la Noche</p>
         
         <div class="hero__buttons">
           <a href="#historia" class="btn btn--primary">
             Conocer Historia
+          </a>
+          <a href="{% url 'Registro' %}" class="btn btn--primary">
+          Registro
           </a>
           <a href="#galeria" class="btn btn--outline">
             Ver Galeria
@@ -216,7 +220,7 @@
       
       <div class="gallery__grid">
         <div class="gallery__item fade-in">
-          <img src="../static/images/batman-hero.png" alt="Batman">
+          <img src="{% static 'src/2.jpg' %}" alt="Batman">
           <div class="gallery__overlay">
             <h4>El Caballero Oscuro</h4>
             <p>Vigilante de Gotham</p>
@@ -224,7 +228,7 @@
         </div>
         
         <div class="gallery__item fade-in">
-          <img src="../static/images/gotham-city.png" alt="Gotham City">
+          <img src="{% static 'src/3.jpg' %}" alt="Gotham City">
           <div class="gallery__overlay">
             <h4>Gotham City</h4>
             <p>La ciudad que nunca duerme</p>
@@ -232,7 +236,7 @@
         </div>
         
         <div class="gallery__item fade-in">
-          <img src="../static/images/batmobile.png" alt="Batmobile">
+          <img src="{% static 'src/4.jpg' %}" alt="Batmobile">
           <div class="gallery__overlay">
             <h4>Batimovil</h4>
             <p>Vehiculo de combate</p>
@@ -240,7 +244,7 @@
         </div>
         
         <div class="gallery__item fade-in">
-          <img src="../static/images/bat-logo.png" alt="Bat Signal">
+          <img src="{% static 'src/logo.png' %}" alt="Bat Signal">
           <div class="gallery__overlay">
             <h4>Bat-Senal</h4>
             <p>Simbolo de esperanza</p>
@@ -248,7 +252,7 @@
         </div>
         
         <div class="gallery__item fade-in">
-          <img src="../static/images/batman-hero.png" alt="Batman en accion">
+          <img src="{% static 'src/1.jpg' %}" alt="Batman en accion">
           <div class="gallery__overlay">
             <h4>En Accion</h4>
             <p>Protegiendo la ciudad</p>
@@ -256,7 +260,7 @@
         </div>
         
         <div class="gallery__item fade-in">
-          <img src="../static/images/gotham-city.png" alt="Noche en Gotham">
+          <img src="{% static 'src/3.jpg' %}">
           <div class="gallery__overlay">
             <h4>Noche Eterna</h4>
             <p>El reino del murcielago</p>
@@ -391,7 +395,7 @@
       </div>
     </div>
   </section>
-
+{% endblock %}
   <!-- ========================================
        FOOTER
   ======================================== -->
@@ -418,6 +422,6 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="../static/scripts/src/main.js"></script>
+  <!--<script src="../static/scripts/src/main.js"></script> - -->
 </body>
 </html>

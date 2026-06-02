@@ -1,5 +1,5 @@
 from django.db import models
-
+#----
 class Alumnos(models.Model):
     ID_Alumno=models.AutoField(primary_key=True)
     DNI=models.TextField(max_length=10)
