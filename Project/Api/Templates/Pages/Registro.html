@@ -1,5 +1,12 @@
 {% extends 'Base.html' %}
+{% load static %}
 
 {% block Altamirano %}
- <h1>Boca </h1>
+<div class="contenedorregistro">
+<img src="{% static 'src/3.jpg' %}" alt="">
+<form action="" method="post">
+    {{Formulario}}
+    <input type="submit" value="Registrar">
+</form>
+</div>
 {% endblock %}

@@ -812,3 +812,67 @@ img {
     justify-content: center;
   }
 }
+
+/*------*/
+
+/* Asegura que el contenedor ocupe toda la pantalla */
+.contenedorregistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0a0a0a; /* Fondo oscuro similar a tu web */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para la imagen (si deseas que tenga un borde elegante) */
+.contenedorregistro img {
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para el formulario */
+.contenedorregistro form {
+    background: #1a1a1a; /* Fondo ligeramente más claro que el body */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo para los inputs (asumiendo que Django renderiza inputs normales) */
+.contenedorregistro form input[type="text"],
+.contenedorregistro form input[type="email"],
+.contenedorregistro form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #000;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box; /* Importante para que el padding no rompa el ancho */
+}
+
+/* Botón de Registro con colores estilo "Batman" */
+.contenedorregistro form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #f3cf00; /* Amarillo Batman */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.contenedorregistro form input[type="submit"]:hover {
+    background-color: #d4b500;
+}
