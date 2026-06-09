@@ -6,7 +6,9 @@
 <img src="{% static 'src/3.jpg' %}" alt="">
 <form action="" method="post">
     {{Formulario}}
+    {% csrf_token %}
     <input type="submit" value="Registrar">
+    <p class="Mensaje">{{Mensaje}}</p>
 </form>
 </div>
 {% endblock %}
