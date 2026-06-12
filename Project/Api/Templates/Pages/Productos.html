@@ -2,14 +2,19 @@
 {% load static %}
 
 {% block Altamirano %}
+
 {% for i in AlumnosTabla %}
 <div class="tarjetas">
-<h1>{{i.DNI}}</h1>
-<h2>{{I.Apellido}}</h2>
-<h3>{{I.Nombre}}</h3>
-<h4>{{I.Edad}}</h4>
-<h5>{{I.Calle}}</h5>
-<h6>{{I.Altura}}</h6>
+        {% if i.Imagen %}
+        <img src="{{% i.Imagen.url %}}" alt="Jugador"
+        {% endif %}
+
+    <h1>{{i.DNI}}</h1>
+    <h2>{{I.Apellido}}</h2>
+    <h3>{{I.Nombre}}</h3>
+    <h4>{{I.Edad}}</h4>
+    <h5>{{I.Calle}}</h5>
+    <h6>{{I.Altura}}</h6>
 </div>
 {% endfor %}
 

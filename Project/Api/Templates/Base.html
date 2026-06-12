@@ -71,12 +71,8 @@
           <a href="#historia" class="btn btn--primary">
             Conocer Historia
           </a>
-          <a href="{% url 'Registro' %}" class="btn btn--primary">
-          Registro
-          </a>
-          <a href="#galeria" class="btn btn--outline">
-            Ver Galeria
-          </a>
+          <a href="{% url 'Registro' %}" class="btn btn--primary">Registro</a>
+          <a href="{% url 'Productos' %}" class="btn btn--outline">Productos</a>
         </div>
       </div>
     </div>
@@ -404,7 +400,7 @@
       <div class="footer__content">
         <p class="footer__quote">"Soy la venganza. Soy la noche. Soy Batman."</p>
         <p class="footer__author">- Bruce Wayne</p>
-        <img src="../static/images/bat-logo.png" alt="Batman Logo" class="footer__logo">
+        <img src="{% static 'src/1.jpg' %}" alt="Batman Logo" class="footer__logo">
         <p class="footer__copy">&copy; 2026 Batman - El Caballero de la Noche. Todos los derechos reservados.</p>
       </div>
     </div>

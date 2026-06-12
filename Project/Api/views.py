@@ -21,6 +21,9 @@ def Registro(request):
 def VerProductos(request):
     query= Alumnos.objects.all()
     data={
-        'Productos':query
+        'AlumnosTabla':query
     }
     return render(request, 'Pages/Productos.html', data)
+
+
+ 
